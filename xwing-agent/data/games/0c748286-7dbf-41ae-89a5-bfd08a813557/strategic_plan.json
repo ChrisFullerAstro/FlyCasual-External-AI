@@ -1,0 +1,35 @@
+{
+  "initial_analysis": "This is a favorable matchup for us. We have two TIE Defenders against two Firesprays - a classic jouster vs. jousting matchup where our superior maneuverability gives us the edge.\n\nKEY ADVANTAGES:\n- Initiative dominance: Vader at I6 moves last and shoots first against both enemies. He can arc-dodge Boba Fett (I5) and will always have positional advantage.\n- Superior defense: 3 agility with full evade access vs their 2 agility Firesprays. Our white evades and 4-speed K-turns give us incredible repositioning.\n- Action economy: Defenders have the best dial in the game with full throttle mechanic (free evade on 3-5 speed maneuvers).\n- Durability: 4 shields + 3 hull with 3 agility is deceptively tanky.\n\nDISADVANTAGES:\n- Lower total HP pool: We have 14 total HP vs their 20 HP.\n- Firesprays have rear arcs: They can punish us if we joust straight through.\n- Boba Fett likely has tricks: His pilot ability can strip tokens or cancel results.\n\nThe Firesprays want to joust and leverage their health advantage. We need to use our superior repositioning to get shots while denying theirs, especially avoiding their rear arcs after passing.",
+  "my_squad_strengths": [
+    "Initiative advantage - Vader moves last, shoots first",
+    "Superior 3 agility vs 2 agility Firesprays",
+    "Best dial in game - white 4K, full throttle free evades",
+    "Arc-dodging capability against both enemies",
+    "No obstacles to worry about - clean engagement lanes"
+  ],
+  "my_squad_weaknesses": [
+    "Lower total HP (14 vs 20)",
+    "Must avoid rear arc shots after passing",
+    "Captain Dobbs at I3 moves before both enemies",
+    "Concentrated fire can melt a Defender quickly"
+  ],
+  "enemy_threats": [
+    "Boba Fett - highest PS enemy, likely has nasty abilities to strip tokens or reroll",
+    "Firespray rear arcs - if we joust through, they punish us on the way out",
+    "Combined 6 dice if both Firesprays focus one Defender"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "hondo-ohnaka-firespray",
+    "boba-fett-firespray"
+  ],
+  "engagement_style": "flanking",
+  "ship_roles": {
+    "darth-vader-defender": "ace - arc-dodger and primary damage dealer, use I6 to position for shots while avoiding arcs",
+    "captain-dobbs-defender": "flanker/support - threaten from different angle, force enemy to choose which Defender to face"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Expect Firesprays to fly in formation and joust. Watch for splitting tactics.",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

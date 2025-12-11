@@ -1,0 +1,38 @@
+{
+  "initial_analysis": "This is a classic Imperial efficiency vs Rebel durability matchup. We have 3 ships (19 total hull/shields) against their 3 ships (25 total hull/shields). The enemy has two I6 pilots (Han and Wedge) which ties our Vader for initiative - this is a key consideration for repositioning. \n\nKey observations:\n- Vader's Defender chassis (3 agility + white evade) makes him extremely survivable against their 3-dice attacks\n- Chiraneau's 12H/4S is a massive health pool but 0 agility makes him vulnerable to focused fire\n- Han's rerolls and 360-degree arc make him a consistent damage dealer that's hard to flank\n- Wedge's pilot ability (reduces defender's agility by 1) is DEVASTATING against Vader - drops him to 2 agility\n- Luke with Servomotor S-Foils Open gains boost, making him slippery\n- Wedge has S-Foils Closed (gains focus-to-evade but loses boost) - he's in defensive configuration\n\nTheir squad has excellent synergy: Wedge strips agility, Han rerolls consistently, Luke can close in with boost. However, they lack repositioning at I6 (Wedge closed S-foils = no boost) which Vader can exploit.",
+  "my_squad_strengths": [
+    "Vader's repositioning and survivability against non-Wedge attacks",
+    "Chiraneau's massive health pool can absorb significant damage",
+    "Gideon's bonus attack die against damaged ships rewards focus fire",
+    "Higher overall maneuverability - Defender and TIE vs X-wings and YT-1300",
+    "Vader ties I6 with Han/Wedge - can choose to move before or after"
+  ],
+  "my_squad_weaknesses": [
+    "Chiraneau's 0 agility makes him melt under focused fire",
+    "Gideon is fragile at 3H/0S - one bad engagement and he's gone",
+    "Wedge's ability hard-counters Vader's survivability",
+    "We have fewer total hit points (19 vs 25)",
+    "If Chiraneau dies early, we lose our damage anchor"
+  ],
+  "enemy_threats": [
+    "Wedge Antilles - PRIORITY THREAT: His -1 agility ability neutralizes Vader's main defense. Must die first or be avoided",
+    "Han Solo - Consistent damage with rerolls, 360 arc means he always has a shot. His health pool makes him a late-game problem",
+    "Luke Skywalker - Force charges for repositioning/mods, boost from open S-foils makes him mobile. Can finish off wounded ships"
+  ],
+  "win_condition": "destroy_ace",
+  "target_priority": [
+    "wedge_antilles",
+    "luke_skywalker",
+    "han_solo"
+  ],
+  "engagement_style": "flanking",
+  "ship_roles": {
+    "darth_vader": "ace - Use superior repositioning to arc-dodge and hunt Wedge. Stay away from Wedge's arc at all costs. Leverage full stop and boost/barrel roll to control engagement",
+    "rear_admiral_chiraneau": "anchor - Draw fire and deal consistent damage. Use reinforce to mitigate incoming damage. Position to force difficult choices on enemy",
+    "gideon_hask": "flanker - Stay at range 3 or behind rocks. Look for opportunistic shots on damaged ships. His ability triggers on damaged enemies so coordinate with Chiraneau's damage output"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: Do they joust or flank? Do they focus Vader or Chiraneau? Does Han hang back or engage?",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

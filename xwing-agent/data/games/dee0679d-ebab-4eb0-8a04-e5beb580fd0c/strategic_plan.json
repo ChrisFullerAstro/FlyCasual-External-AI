@@ -1,0 +1,36 @@
+{
+  "initial_analysis": "This is a heavyweight 1v1 duel between two I5 large-base ships. RAC's Decimator has massive health (12H/4S = 16 total) vs Boba's 10 total (6H/4S), but RAC has ZERO agility dice while Boba has 2 green dice. RAC fires 3 red dice and can leverage his pilot ability (spend reinforce to reroll) for consistent damage. Boba also fires 3 dice but his ability lets him reroll if defending against obstructed attacks or in bullseye - with no obstacles on the board, his offensive reroll is limited to bullseye only. The Firespray's rear arc is a key threat - Boba can fire in both directions. RAC needs to leverage his health advantage and avoid letting Boba's 2 agility dice blank out attacks. This will be a war of attrition where RAC's +6 health advantage should prove decisive if we trade efficiently.",
+  "my_squad_strengths": [
+    "Massive health pool (16 total vs Boba's 10) - 60% more durability",
+    "Consistent damage output with RAC's reinforce-to-reroll ability",
+    "Large base provides good coverage for arc placement",
+    "No obstacles means predictable engagement lanes",
+    "Health advantage means we win equal trades decisively"
+  ],
+  "my_squad_weaknesses": [
+    "Zero agility - every hit lands, we take full damage from every attack",
+    "Large base limits maneuverability for arc-dodging",
+    "Cannot leverage obstacles for Boba's defensive ability (but neither can he)",
+    "Single ship - no ability to flank or block",
+    "Vulnerable to crits with no defensive dice to cancel them"
+  ],
+  "enemy_threats": [
+    "Boba's 2 agility dice can blank out attacks - variance favors him defensively",
+    "Rear firing arc means Boba can deal damage while running/repositioning",
+    "Firespray's maneuver dial is more agile than Decimator",
+    "Boba's reroll ability in bullseye - avoid his front arc centerline",
+    "Potential for high-damage crits that could cripple RAC mid-game"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "boba-fett-firespray"
+  ],
+  "engagement_style": "aggressive",
+  "ship_roles": {
+    "rear-admiral-chiraneau-decimator": "jouster"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: jousting head-on vs kiting with rear arc, aggressive closing vs hit-and-run tactics",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

@@ -1,0 +1,40 @@
+{
+  "initial_analysis": "This is a 1v1 ace duel between two iconic bounty hunters. Dengar (I6, 2A/2D, 6H/3S) vs Boba Fett (I5, 3A/2D, 6H/4S). Key factors:\n\n**Initiative Advantage**: Dengar has I6 vs Boba's I5 - this is HUGE. Dengar moves second and shoots first, allowing superior positioning and guaranteed first strike.\n\n**Offensive Comparison**: Boba has 3 attack dice vs Dengar's 2, giving Boba raw damage advantage. However, Dengar's pilot ability (counterattack when defending) effectively gives him additional attacks if Boba shoots him.\n\n**Defensive Comparison**: Both have 2 agility, but Boba has 4 shields vs Dengar's 3 shields. Combined with 6 hull each, Boba has 10 total HP vs Dengar's 9 HP - a slight durability edge.\n\n**Maneuverability**: JumpMaster 5000 has asymmetric dial (strong left turns, weak right). Firespray has rear arc capability and solid dial. Boba's rear arc is a significant threat - he can deal damage even when \"running away.\"\n\n**Critical Consideration**: Boba's rear arc means he's never truly disengaged. Dengar needs to avoid tail-chasing situations where Boba can shoot back without Dengar having arc.",
+  "my_squad_strengths": [
+    "Initiative 6 - move last, shoot first",
+    "Dengar's counterattack ability punishes Boba for shooting",
+    "Superior repositioning due to moving after Boba",
+    "Can force favorable engagements with I6 movement",
+    "JumpMaster turret arc provides flexible firing options"
+  ],
+  "my_squad_weaknesses": [
+    "Lower attack dice (2 vs 3)",
+    "Slightly less total HP (9 vs 10)",
+    "Asymmetric dial limits right-side maneuvers",
+    "No rear arc - vulnerable to Boba flying past",
+    "Must avoid extended tail-chase scenarios"
+  ],
+  "enemy_threats": [
+    "Boba's 3-dice primary attack with potential rerolls",
+    "Rear arc allowing damage while disengaging",
+    "Higher total HP pool for attrition",
+    "Firespray's ability to joust effectively then disengage with rear arc coverage"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "boba-fett"
+  ],
+  "engagement_style": "jousting",
+  "ship_roles": {
+    "dengar": "ace"
+  },
+  "adjustments": [
+    "If Boba jousts: Accept the joust, use I6 to ensure range 1 if possible for extra die",
+    "If Boba flanks: Use I6 movement to cut off angles, force front arc engagements",
+    "If taking heavy damage: Consider half-points denial, keep Dengar above 4 HP threshold",
+    "If Boba runs with rear arc: Do NOT chase directly - reposition to re-engage front arc"
+  ],
+  "opponent_tendencies": "Unknown - observing. Watch for: 1) Does Boba joust head-on or try flanking? 2) Does he use rear arc aggressively (flying past) or defensively? 3) How does he handle Dengar's I6 repositioning?",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

@@ -1,0 +1,39 @@
+{
+  "initial_analysis": "This is a high-skill matchup between two elite squads. We have a tanky Decimator (12H/4S), the premier I6 ace Vader in a Defender, and a solid support piece in Gideon Hask. The enemy brings Boba Fett's consistent damage and reposition, the extremely dangerous Fenn Rau (I6 ace that hits like a truck at Range 1), and Durge who is annoyingly durable with his regen ability.\n\nKEY MATCHUP FACTORS:\n- Initiative tie at I6 between Vader and Fenn Rau means Vader moves first but shoots first - this slightly favors us defensively as Vader can arc-dodge after seeing Fenn's position\n- Chiraneau at I5 moves after Boba/Durge but before them in combat - decent for arc coverage\n- Enemy squad is more maneuverable overall; we have more raw HP (19H/8S vs 15H/6S)\n- Fenn Rau is a glass cannon (4H/0S) - extremely deadly at R1 but fragile if caught\n- Our Decimator provides consistent damage and can absorb enemy fire\n\nCRITICAL CONCERN: Fenn Rau at Range 1 with Concordia Faceoff can delete ships. We must deny him favorable engagements or eliminate him fast.",
+  "my_squad_strengths": [
+    "Vader's I6 with 3 agility Defender chassis is extremely survivable and can arc-dodge",
+    "Chiraneau's massive health pool (16 effective HP) absorbs damage and controls space",
+    "Gideon Hask's ability punishes damaged ships - excellent finisher",
+    "Total HP advantage (19H/8S vs 15H/6S)",
+    "Vader's full throttle + evade token makes him very tanky",
+    "Good damage output across all ships"
+  ],
+  "my_squad_weaknesses": [
+    "Decimator has 0 agility - will take consistent damage from Boba's 3-dice attacks",
+    "Gideon Hask is fragile (3H/0S) - easy half points or kill for Fenn",
+    "Less overall maneuverability than enemy squad",
+    "If Vader gets blocked, he's vulnerable to focused fire",
+    "Enemy has better repositioning options (Boba's slave 1 title, Fenn's boost/barrel roll)"
+  ],
+  "enemy_threats": [
+    "Fenn Rau - At Range 1 he rolls 4+ dice with Concordia Faceoff reducing your defense. Can one-shot Gideon or cripple Vader if he catches him",
+    "Boba Fett - Consistent 3-dice from front AND rear arc, very durable at 10 effective HP, hard to shake",
+    "Durge - His pilot ability makes him frustrating to kill; don't over-commit to finishing him if it costs position"
+  ],
+  "win_condition": "destroy_ace",
+  "target_priority": [
+    "Fenn Rau",
+    "Durge",
+    "Boba Fett"
+  ],
+  "engagement_style": "jousting",
+  "ship_roles": {
+    "Darth Vader": "ace",
+    "Rear Admiral Chiraneau": "anchor",
+    "Gideon Hask": "flanker"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: Does Fenn joust or flank? Does Boba fly aggressive or as a turret platform? Is Durge used as a blocker or damage dealer?",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

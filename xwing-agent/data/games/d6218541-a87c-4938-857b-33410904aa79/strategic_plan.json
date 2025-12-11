@@ -1,0 +1,36 @@
+{
+  "initial_analysis": "This is a classic ace vs. bounty hunter matchup. Darth Vader in the TIE/D Defender is one of the most dangerous aces in the game - I6 initiative means he moves last and shoots first, the Defender chassis gives excellent action economy with the white evade from Full Throttle, and Vader's ability to spend Force for results makes him incredibly consistent. Boba Fett in the Firespray is a durable ship with 10 total health (6H/4S), rear arc capability, and likely has tricks up his sleeve. However, Boba's I5 means Vader will always have positional advantage. The Defender's 3 agility vs Firespray's 2 agility gives Vader a significant defensive edge, especially with Force tokens available. This is a favorable matchup for Vader if played patiently.",
+  "my_squad_strengths": [
+    "I6 initiative - always moves last, shoots first",
+    "3 agility with access to evade tokens via Full Throttle",
+    "Force tokens provide action/dice modification flexibility",
+    "Defender dial is excellent with white K-turns and speed options",
+    "Can sustain damage with 4 shields + 3 hull",
+    "No obstacles on board reduces risk of self-damage during repositioning"
+  ],
+  "my_squad_weaknesses": [
+    "Single ship - no margin for error",
+    "Defender is predictable with mandatory 3+ speed maneuvers for Full Throttle",
+    "Cannot trade efficiently if caught in both arcs",
+    "10 health pool on Boba means this will be a long fight"
+  ],
+  "enemy_threats": [
+    "Boba's rear arc - can punish failed flanking attempts",
+    "Potential Slave I title allowing repositioning",
+    "Likely has bombs or missiles as secondary threats",
+    "Boba's pilot ability may allow rerolls making him more consistent",
+    "High health pool means Boba can weather early exchanges"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "boba-fett-firespray"
+  ],
+  "engagement_style": "jousting",
+  "ship_roles": {
+    "darth-vader-tied-defender": "ace"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: aggressive jousting vs. kiting behavior, bomb deployment patterns, willingness to disengage",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}
