@@ -156,18 +156,26 @@ namespace ExternalAI
 
         private static string ConvertBearingCodeToType(string bearing, string direction)
         {
-            string dir = direction == "L" ? "_left" : direction == "R" ? "_right" : "";
+            // Ensure we always have left/right for directional maneuvers
+            string leftRight = direction == "L" ? "_left" : "_right";
 
             switch (bearing)
             {
                 case "S": return "straight";
-                case "B": return "bank" + dir;
-                case "T": return "turn" + dir;
-                case "K": return "kturn";
-                case "R": return "sloop" + dir;  // Segnor's Loop uses R
-                case "E": return "talon" + dir;  // Tallon Roll uses E
+                case "B": return "bank" + leftRight;
+                case "T": return "turn" + leftRight;
+                case "K":
+                    // K with Forward = K-turn, K with L/R = Segnor's Loop
+                    if (direction == "F") return "kturn";
+                    return "sloop" + leftRight;
+                case "R":
+                    // Segnor's Loop using turn template
+                    return "sloop" + leftRight;
+                case "E":
+                    // Tallon Roll
+                    return "talon" + leftRight;
                 case "V": return "reverse_straight";
-                case "A": return "reverse_bank" + dir;
+                case "A": return "reverse_bank" + leftRight;
                 default: return "straight";
             }
         }
