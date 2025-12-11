@@ -12,17 +12,21 @@ namespace ExternalAI
     /// </summary>
     public class ExternalAiClient
     {
-        private static readonly HttpClient _client = new HttpClient();
+        private static readonly HttpClient _client;
         private const int DEFAULT_PORT = 33293;
         private string _baseUrl = $"http://localhost:{DEFAULT_PORT}/api/v1";
         private string _currentSessionId;
+
+        static ExternalAiClient()
+        {
+            _client = new HttpClient();
+            _client.Timeout = TimeSpan.FromSeconds(60);
+        }
 
         public ExternalAiClient(string baseUrl = null)
         {
             if (!string.IsNullOrEmpty(baseUrl))
                 _baseUrl = baseUrl;
-
-            _client.Timeout = TimeSpan.FromSeconds(60);
         }
 
         public string CurrentSessionId => _currentSessionId;
