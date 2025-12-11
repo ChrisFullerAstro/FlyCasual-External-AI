@@ -55,6 +55,7 @@ namespace ExternalAI
         public int speed { get; set; }
         public string type { get; set; }
         public string difficulty { get; set; }
+        public string code { get; set; }  // FlyCasual format: "4.F.K"
     }
 
     public class ObstacleExport

@@ -205,6 +205,27 @@ namespace ExternalAI
 
                 if (_plannedManeuvers.TryGetValue(shipId, out string maneuverCode))
                 {
+                    // Validate the maneuver exists on this ship's dial
+                    if (!Selection.ThisShip.HasManeuver(maneuverCode))
+                    {
+                        Debug.LogError($"Ship {shipId} ({Selection.ThisShip.PilotInfo.PilotName}) does not have maneuver {maneuverCode}!");
+                        Debug.Log($"Available maneuvers: {string.Join(", ", Selection.ThisShip.Maneuvers.Keys)}");
+
+                        // Try to find a similar valid maneuver as fallback
+                        string fallbackManeuver = FindFallbackManeuver(Selection.ThisShip, maneuverCode);
+                        if (fallbackManeuver != null)
+                        {
+                            Debug.Log($"Using fallback maneuver: {fallbackManeuver}");
+                            maneuverCode = fallbackManeuver;
+                        }
+                        else
+                        {
+                            Debug.LogWarning("No fallback found, using Aggressor AI");
+                            base.AskAssignManeuver();
+                            return;
+                        }
+                    }
+
                     Debug.Log($"Assigning external AI maneuver to ship {shipId}: {maneuverCode}");
                     ShipMovementScript.SendAssignManeuverCommand(maneuverCode);
 
@@ -225,6 +246,39 @@ namespace ExternalAI
             {
                 base.AskAssignManeuver();
             }
+        }
+
+        /// <summary>
+        /// Find a fallback maneuver when the AI picks an invalid one.
+        /// Tries to find a similar maneuver at lower speed.
+        /// </summary>
+        private string FindFallbackManeuver(GenericShip ship, string invalidManeuver)
+        {
+            var parts = invalidManeuver.Split('.');
+            if (parts.Length < 3) return null;
+
+            int speed = int.Parse(parts[0]);
+            string direction = parts[1];
+            string bearing = parts[2];
+
+            // Try same bearing at lower speeds
+            for (int s = speed - 1; s >= 1; s--)
+            {
+                string candidate = $"{s}.{direction}.{bearing}";
+                if (ship.HasManeuver(candidate))
+                    return candidate;
+            }
+
+            // Try straight at same speed
+            string straight = $"{speed}.F.S";
+            if (ship.HasManeuver(straight))
+                return straight;
+
+            // Try 2 straight as safe default
+            if (ship.HasManeuver("2.F.S"))
+                return "2.F.S";
+
+            return null;
         }
 
         /// <summary>

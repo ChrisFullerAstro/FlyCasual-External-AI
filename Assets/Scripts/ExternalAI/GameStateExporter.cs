@@ -122,23 +122,54 @@ namespace ExternalAI
         {
             var maneuvers = new List<ManeuverExport>();
 
-            foreach (var kvp in ship.DialInfo.PrintedDial)
+            // Use ship.Maneuvers which has the actual string keys like "4.F.K"
+            foreach (var kvp in ship.Maneuvers)
             {
-                var move = kvp.Key;
+                string maneuverCode = kvp.Key;
                 var color = kvp.Value;
 
-                string type = ConvertBearingToType(move.Bearing);
+                if (color == Movement.MovementComplexity.None)
+                    continue; // Skip unavailable maneuvers
+
+                // Parse the maneuver code (e.g., "4.F.K" -> speed=4, direction=F, bearing=K)
+                var parts = maneuverCode.Split('.');
+                if (parts.Length < 3) continue;
+
+                int speed = int.Parse(parts[0]);
+                string direction = parts[1];
+                string bearing = parts[2];
+
+                string type = ConvertBearingCodeToType(bearing, direction);
                 string difficulty = ConvertColorToDifficulty(color);
 
                 maneuvers.Add(new ManeuverExport
                 {
-                    speed = move.SpeedIntUnsigned,
+                    speed = speed,
                     type = type,
-                    difficulty = difficulty
+                    difficulty = difficulty,
+                    code = maneuverCode  // Include the exact code for validation
                 });
             }
 
             return maneuvers;
+        }
+
+        private static string ConvertBearingCodeToType(string bearing, string direction)
+        {
+            string dir = direction == "L" ? "_left" : direction == "R" ? "_right" : "";
+
+            switch (bearing)
+            {
+                case "S": return "straight";
+                case "B": return "bank" + dir;
+                case "T": return "turn" + dir;
+                case "K": return "kturn";
+                case "R": return "sloop" + dir;  // Segnor's Loop uses R
+                case "E": return "talon" + dir;  // Tallon Roll uses E
+                case "V": return "reverse_straight";
+                case "A": return "reverse_bank" + dir;
+                default: return "straight";
+            }
         }
 
         private static string ConvertBearingToType(Movement.ManeuverBearing bearing)
