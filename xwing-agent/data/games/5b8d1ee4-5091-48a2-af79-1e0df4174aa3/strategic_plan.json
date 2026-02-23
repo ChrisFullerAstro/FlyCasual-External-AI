@@ -1,0 +1,36 @@
+{
+  "initial_analysis": "This is a classic ace vs tanky gunship matchup. Anakin in the Eta-2 is an elite arc-dodger with I6 initiative advantage over Boba's I5, meaning we move last and shoot first - a critical advantage. However, the stat differential is stark: Anakin has only 3 total health (3H/0S) versus Boba's massive 10 effective health (6H/4S). Anakin cannot afford to take more than 1-2 hits, while Boba can absorb significant punishment.\n\nThe Eta-2's 2 attack dice vs Firespray's 2 defense dice means our damage output is low - we'll need multiple clean engagements to whittle down Boba. Boba's 3 attack dice can threaten a significant portion of Anakin's health in a single shot. The Firespray's rear arc makes jousting and disengaging equally dangerous.\n\nKey advantage: I6 means we see Boba's position before committing, and we shoot first potentially stripping tokens before Boba fires back. Anakin's ability to use Force for repositioning/modification is essential.",
+  "my_squad_strengths": [
+    "I6 initiative - move last, shoot first",
+    "Superior repositioning with Force and Eta-2 dial",
+    "Can arc-dodge Boba's forward AND rear arc with careful positioning",
+    "Force tokens for dice modification on attack and defense",
+    "Small base makes blocking difficult for opponent"
+  ],
+  "my_squad_weaknesses": [
+    "Only 3 health - cannot trade shots",
+    "Low attack dice (2) vs 2 defense means slow damage output",
+    "Single ship - no margin for error, no blocking support",
+    "If caught in arc, likely dead in 1-2 rounds",
+    "Must maintain perfect positioning for entire game"
+  ],
+  "enemy_threats": [
+    "Boba's 3-dice primary can one-shot or cripple Anakin",
+    "Rear arc makes disengaging dangerous - no safe approach angle",
+    "10 effective health means long engagement required",
+    "Boba's rerolls/abilities can spike damage unexpectedly",
+    "If Boba lands a block, Anakin is in serious trouble"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "boba-fett-firespray"
+  ],
+  "engagement_style": "flanking",
+  "ship_roles": {
+    "anakin-skywalker-eta2": "ace"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: jousting tendencies, how they use rear arc, whether they chase or try to block.",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

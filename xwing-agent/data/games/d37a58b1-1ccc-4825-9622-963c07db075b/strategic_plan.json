@@ -1,0 +1,36 @@
+{
+  "initial_analysis": "This is a classic 1v1 heavyweight duel: Decimator vs Firespray. Both ships are I5, so we have simultaneous engagement with no initiative advantage either way. RAC has significantly more total HP (16 vs 10) but ZERO agility compared to Boba's 2 defense dice. Boba's defensive advantage means he'll statistically take less damage per attack, but RAC's massive health pool gives us staying power. The Firespray's auxiliary rear arc is dangerous - Boba can deal damage while fleeing. RAC's 3-dice primary with no upgrades listed means we need to maximize every shot. This is an attrition fight where our HP advantage should win if we trade efficiently.",
+  "my_squad_strengths": [
+    "Massive 16 total HP (12H/4S) vs Boba's 10 HP - 60% more durability",
+    "Large base allows consistent arc coverage and blocking potential",
+    "VT-49's turret arc provides flexible firing options",
+    "No obstacles on board means open engagement lanes - favors our jousting approach",
+    "RAC's I5 pilot ability (if standard) adds offensive consistency"
+  ],
+  "my_squad_weaknesses": [
+    "Zero agility dice - every hit lands, we take full damage from every attack",
+    "Large base is harder to maneuver in tight spaces",
+    "Cannot arc-dodge - must rely on raw HP to outlast",
+    "Same initiative as Boba means simultaneous fire - no safety from being destroyed before shooting",
+    "Firespray's rear arc means Boba can always shoot even when running"
+  ],
+  "enemy_threats": [
+    "Boba Fett's 2 agility will blank many of our hits - expect ~1.5 damage per attack vs his ~2.25 against us",
+    "Firespray's rear auxiliary arc means Boba is NEVER arc-less - he shoots every round",
+    "Boba's pilot ability (rerolls) increases his offensive and defensive consistency",
+    "At I5, Boba moves after seeing nothing and shoots simultaneously - no predictive advantage for us",
+    "If Boba kites and uses rear arc, he controls engagement distance"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "boba-fett"
+  ],
+  "engagement_style": "aggressive",
+  "ship_roles": {
+    "rear-admiral-chiraneau": "ace"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: kiting/jousting preference, use of rear arc, willingness to take head-on engagements vs flanking",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

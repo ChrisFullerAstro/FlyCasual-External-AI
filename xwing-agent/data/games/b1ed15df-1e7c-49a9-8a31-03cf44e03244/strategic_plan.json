@@ -1,0 +1,38 @@
+{
+  "initial_analysis": "This is a high-initiative battle with both squads featuring I5-I6 aces. My squad has a significant durability advantage with Chiraneau's massive 16 effective HP and Vader's 7 HP with 3 agility. The enemy has Fenn Rau as their glass cannon ace (4 HP, 0 shields) and Boba Fett as their anchor. Tapusk is likely running support/coordinate abilities. Key insight: Vader at I6 moves after Fenn Rau and shoots simultaneously - this is critical for the ace duel. Chiraneau at I5 can be blocked by Boba/Tapusk but provides massive firepower. Magna Tolvan is our weak link at I3 with no shields - she will move first and be vulnerable.",
+  "my_squad_strengths": [
+    "Initiative advantage with Vader at I6 - moves after Fenn, shoots same time",
+    "Massive combined HP pool (16+7+3 = 26 effective HP vs enemy's ~19)",
+    "Chiraneau is extremely tanky and can reinforce",
+    "Vader's 3 agility Defender is hard to kill and has white evade",
+    "No reliance on single fragile piece - we have redundancy"
+  ],
+  "my_squad_weaknesses": [
+    "Magna Tolvan is fragile at 3HP/0S and moves at I3 - easy prey for Fenn",
+    "Chiraneau has 0 agility - will take consistent damage",
+    "Large base Decimator can be blocked easily",
+    "If Vader goes down early, we lose our ace-killer",
+    "Low overall ship count means each loss is significant"
+  ],
+  "enemy_threats": [
+    "Fenn Rau - 5 dice at R1 with Concordia Faceoff, can one-shot Tolvan or cripple any ship",
+    "Boba Fett - rear arc threat and likely has Slave I title for repositioning, very durable",
+    "Tapusk - HWK support ship likely coordinating Fenn or Boba for extra actions, kill the enabler"
+  ],
+  "win_condition": "destroy_ace",
+  "target_priority": [
+    "fenn_rau",
+    "tapusk",
+    "boba_fett"
+  ],
+  "engagement_style": "jousting",
+  "ship_roles": {
+    "chiraneau": "anchor - use large base and massive HP to control engagement, reinforce when focused, deal consistent damage",
+    "vader": "ace_hunter - primary job is to kill Fenn Rau, use I6 repositioning to get good arcs while denying Fenn's bonus attacks",
+    "tolvan": "blocker - use I3 movement to block Boba or Tapusk, keep her at range 3 when possible, expendable if it creates opportunities"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: Does Fenn joust or flank? Does Tapusk stay back or fly in formation? Is Boba aggressive or reserved?",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

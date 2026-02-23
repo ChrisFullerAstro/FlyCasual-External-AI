@@ -1,0 +1,34 @@
+{
+  "initial_analysis": "This is a classic agile interceptor vs slow bomber matchup. Backstabber (TIE/ln) at I5 faces Leema Kai (Y-wing) also at I5, meaning simultaneous initiative - whoever is second player moves last and shoots first. \n\nBackstabber's advantages: Superior maneuverability (TIE dial is far better than Y-wing), 3 agility vs Y-wing's 1 agility makes Backstabber much harder to hit, Crack Shot can push damage through, AfterBurners allows repositioning after maneuvers, and the pilot ability grants extra attack dice when shooting outside the defender's arc.\n\nLeema Kai's advantages: 8 total health (6H/2S) vs Backstabber's 4H makes her much more durable, Y-wings can take punishment, and Leema's ability likely provides some utility (possibly related to device/torpedo mechanics).\n\nKey matchup dynamic: Backstabber must avoid the Y-wing's firing arc while consistently getting shots. With 3 agility and AfterBurners for repositioning, Backstabber can arc-dodge effectively. The Y-wing's 1 agility means even 2-dice attacks will land consistently, and Crack Shot ensures at least one evade result is cancelled when it matters most.",
+  "my_squad_strengths": [
+    "Superior maneuverability - TIE dial vastly outclasses Y-wing",
+    "3 agility vs 1 agility - very hard for Y-wing to land hits",
+    "Backstabber pilot ability - extra dice when outside enemy arc",
+    "Crack Shot - guarantees damage gets through",
+    "AfterBurners - excellent repositioning for arc-dodging",
+    "Disciplined - action efficiency when stressed or after destroying enemy"
+  ],
+  "my_squad_weaknesses": [
+    "Only 4 health with no shields - cannot trade shots",
+    "Single ship - no margin for error",
+    "Same initiative means positioning battle is critical",
+    "If caught in arc, Y-wing's 2 dice can still hurt through variance"
+  ],
+  "enemy_threats": [
+    "Leema Kai's durability - 8 health means this will be a long fight",
+    "Y-wing can equip torpedoes/turrets potentially",
+    "If Backstabber gets caught in arc, even 2-dice attacks can be deadly given low health pool"
+  ],
+  "win_condition": "attrition",
+  "target_priority": [
+    "leema-kai-btla4-ywing"
+  ],
+  "engagement_style": "flanking",
+  "ship_roles": {
+    "backstabber-tieln-fighter": "ace"
+  },
+  "adjustments": [],
+  "opponent_tendencies": "Unknown - observing. Watch for: does opponent try to joust or slow-roll? Are they running turret or forward arc only? How aggressive are their maneuvers?",
+  "created_turn": 1,
+  "last_updated_turn": 1
+}

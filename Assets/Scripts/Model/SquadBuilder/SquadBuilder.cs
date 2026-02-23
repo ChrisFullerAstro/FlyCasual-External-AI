@@ -1,4 +1,5 @@
 ﻿using Editions;
+using ExternalAI;
 using Players;
 using System;
 using Upgrade;
@@ -48,7 +49,11 @@ namespace SquadBuilderNS
             switch (modeName)
             {
                 case "vsAI":
-                    SetPlayerTypes(typeof(HumanPlayer), typeof(AggressorAiPlayer));
+                    // Use ExternalAiPlayer (falls back to Aggressor if Python server not running)
+                    SetPlayerTypes(typeof(HumanPlayer), typeof(ExternalAiPlayer));
+                    break;
+                case "vsExternalAI":
+                    SetPlayerTypes(typeof(HumanPlayer), typeof(ExternalAiPlayer));
                     break;
                 case "Internet":
                     SetPlayerTypes(typeof(HumanPlayer), typeof(NetworkOpponentPlayer));
@@ -58,6 +63,9 @@ namespace SquadBuilderNS
                     break;
                 case "AIvsAI":
                     SetPlayerTypes(typeof(AggressorAiPlayer), typeof(AggressorAiPlayer));
+                    break;
+                case "ExternalAIvsAI":
+                    SetPlayerTypes(typeof(ExternalAiPlayer), typeof(AggressorAiPlayer));
                     break;
                 case "Replay":
                     SetPlayerTypes(typeof(ReplayPlayer), typeof(ReplayPlayer));
